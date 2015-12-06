@@ -58,13 +58,7 @@ public class Frame1 {
 			}
 			
 			ImageIcon icon = new ImageIcon(this.getClass().getResource("summation.png"));
-			
-		
-			
-			
-			
-			
-			
+			btnNewButton.setIcon(summation.png);
 			
 			
 		});
