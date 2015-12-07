@@ -6,6 +6,7 @@ import java.awt.Image;
 import javax.swing.JFrame;
 import java.awt.Color;
 
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
@@ -52,33 +53,36 @@ public class Frame1 {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JButton btnNewButton = new JButton(" ");
+		Icon a=new ImageIcon(getClass().getResource("summation.png"));
+		JButton btnNewButton = new JButton(a);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 			
-			ImageIcon icon = new ImageIcon(this.getClass().getResource("summation.png"));
-			btnNewButton.setIcon(summation.png);
+		
 			
 			
 		});
-		btnNewButton.setBounds(72, 165, 100, 50);
+		btnNewButton.setBounds(60, 151, 112, 59);
 		frame.getContentPane().add(btnNewButton);
 		
-		JButton btnNewButton_1 = new JButton("Subtraction");
-		btnNewButton_1.setBounds(72, 291, 100, 23);
+		Icon b=new ImageIcon(getClass().getResource("subtraction.png"));
+		JButton btnNewButton_1 = new JButton(b);
+		btnNewButton_1.setBounds(60, 221, 112, 59);
 		frame.getContentPane().add(btnNewButton_1);
 		
-		JButton btnNewButton_2 = new JButton("Multiplication");
+		Icon c=new ImageIcon(getClass().getResource("multiplication.png"));
+		JButton btnNewButton_2 = new JButton(c);
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		btnNewButton_2.setBounds(72, 325, 100, 23);
+		btnNewButton_2.setBounds(60, 291, 112, 57);
 		frame.getContentPane().add(btnNewButton_2);
 		
-		JButton btnDivision = new JButton("Division");
-		btnDivision.setBounds(72, 359, 100, 23);
+		Icon d=new ImageIcon(getClass().getResource("division.png"));
+		JButton btnDivision = new JButton(d);
+		btnDivision.setBounds(60, 359, 112, 59);
 		frame.getContentPane().add(btnDivision);
 		
 		JLabel label = new JLabel("");
